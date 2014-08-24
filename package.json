@@ -1,0 +1,14 @@
+{
+  "name": "simul",
+  "version": "0.0.1",
+  "description": "Create writable streams that process data in parallel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evan Solomon",
+  "license": "MIT",
+  "dependencies": {
+    "futurus": "evansolomon/futurus"
+  }
+}
