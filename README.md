@@ -1,5 +1,7 @@
 # Simul
 
+[![Build Status](https://secure.travis-ci.org/evansolomon/simul.svg?branch=master)](http://travis-ci.org/evansolomon/simul)
+
  > At the same time
 
 Create Node.js writable streams that process data in parallel.
