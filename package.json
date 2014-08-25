@@ -1,7 +1,12 @@
 {
   "name": "simul",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Create writable streams that process data in parallel.",
+  "homepage": "https://github.com/evansolomon/simul",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evansolomon/simul.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "tsc src/index.ts --module commonjs --outDir lib --declaration --noImplicitAny",
