@@ -20,7 +20,7 @@ var parallelWrite = function (data, enc, done) {
   }, Math.random() * 2000)
 }
 
-var writable = simul.extend(parallelWrite, 5, {objectMode: true})
+var writable = simul.Writable.extend(parallelWrite, 5, {objectMode: true})
 writable.write(1)
 writable.write(2)
 writable.write(3)
