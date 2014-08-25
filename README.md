@@ -4,8 +4,12 @@
 
 Create Node.js writable streams that process data in parallel.
 
+This should only be used for streams where chunks are completely independent.
+
+## Example
+
 ```js
-var Simul = require('./index')
+var simul = require('./index')
 
 var parallelWrite = function (data, enc, done) {
   setTimeout(function () {
@@ -14,7 +18,7 @@ var parallelWrite = function (data, enc, done) {
   }, Math.random() * 2000)
 }
 
-var writable = Simul.extend(parallelWrite, 5, {objectMode: true})
+var writable = simul.extend(parallelWrite, 5, {objectMode: true})
 writable.write(1)
 writable.write(2)
 writable.write(3)

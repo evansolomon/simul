@@ -4,11 +4,17 @@
   "description": "Create writable streams that process data in parallel.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc src/index.ts --module commonjs --outDir lib --declaration --noImplicitAny",
+    "prepublish": "npm run build",
+    "test": "npm run build && nodeunit"
   },
   "author": "Evan Solomon",
   "license": "MIT",
   "dependencies": {
-    "futurus": "evansolomon/futurus"
+    "futurus": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^1.0.1",
+    "nodeunit": "^0.9.0"
   }
 }
